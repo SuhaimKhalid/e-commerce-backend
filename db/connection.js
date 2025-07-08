@@ -1,20 +1,24 @@
 const { Pool } = require('pg');
-require('dotenv').config(); // Automatically loads `.env`, `.env.test`, etc.
+const path = require('path');
+const dotenv = require('dotenv');
 
 const ENV = process.env.NODE_ENV || 'development';
 
-const config = {};
+dotenv.config({
+  path: path.resolve(__dirname, `../.env.${ENV}`),
+});
 
-if (ENV === 'production') {
+const config = {
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: process.env.PGPORT,
+};
+
+if (process.env.DATABASE_URL) {
   config.connectionString = process.env.DATABASE_URL;
   config.ssl = { rejectUnauthorized: false };
-  config.max = 2;
-} else {
-  config.user = process.env.PGUSER;
-  config.host = process.env.PGHOST;
-  config.database = process.env.PGDATABASE;
-  config.password = process.env.PGPASSWORD;
-  config.port = process.env.PGPORT || 5432;
 }
 
 const db = new Pool(config);
