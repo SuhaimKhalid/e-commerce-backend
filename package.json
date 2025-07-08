@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "setup-db": "cross-env PGPASSWORD=1122 psql -U postgres -h localhost -f ./db/setup-db.sql",
-    "test": "jest",
-     "db:test": "node ./Test/test.js",
-  "db:dev": "node Test/test.js"
+   "start": "node server.js",
+  "db:dev": "cross-env NODE_ENV=development node Test/test.js",
+  "db:test": "cross-env NODE_ENV=test node Test/test.js",
+  "seed:dev": "cross-env NODE_ENV=development node db/seeds/run-seed.js",
+  "seed:test": "cross-env NODE_ENV=test node db/seeds/run-seed.js",
+  "test": "cross-env NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
