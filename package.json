@@ -1,0 +1,36 @@
+{
+  "name": "e-commerce-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup-db": "cross-env PGPASSWORD=1122 psql -U postgres -h localhost -f ./db/setup-db.sql",
+    "test": "jest",
+     "db:test": "node ./Test/test.js",
+  "db:dev": "node Test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuhaimKhalid/e-commerce-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuhaimKhalid/e-commerce-backend/issues"
+  },
+  "homepage": "https://github.com/SuhaimKhalid/e-commerce-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "pg-format": "^1.0.4",
+    "postgres": "^3.4.7",
+    "supertest": "^7.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^30.0.3"
+  }
+}

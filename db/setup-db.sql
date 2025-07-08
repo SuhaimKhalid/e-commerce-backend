@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS bridal_db;
+CREATE DATABASE bridal_db;
+
+DROP DATABASE IF EXISTS bridal_db_test;
+CREATE DATABASE bridal_db_test;
