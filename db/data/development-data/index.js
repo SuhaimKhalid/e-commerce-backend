@@ -1,0 +1,13 @@
+exports.adminsData = require("./admins.js");
+exports.cart_items_Data = require("./cart_items.js");
+exports.categoriesData = require("./categories.js");
+exports.inventoryData = require("./inventory.js");
+exports.order_items_Data = require("./order_items.js");
+exports.orderData = require("./orders.js");
+exports.paymentsData = require("./payments.js");
+exports.product_images_Data = require("./product_images.js");
+exports.productsData = require("./products.js");
+exports.reviewsData = require("./reviews.js");
+exports.usersData = require("./users.js");
+exports.addressesData = require("./addresses.js");
+exports.productsVariants = require("./product_variants.js");
