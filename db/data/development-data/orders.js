@@ -1,4 +1,13 @@
+// orders.js
 module.exports = [
-  { user_id: 1, total: 39.98, status: "pending" },
-  { user_id: 2, total: 899.99, status: "completed" },
+  {
+    username: "user1",
+    total: 59.99,
+    status: "pending",
+  },
+  {
+    username: "user2",
+    total: 89.49,
+    status: "shipped",
+  },
 ];

@@ -1,4 +1,16 @@
+// Dummy cart items data (more readable with names)
 module.exports = [
-  { user_id: 1, product_id: 1, quantity: 2 },
-  { user_id: 2, product_id: 2, quantity: 1 },
+  {
+    username: "user1",
+    productName: "T-shirt",
+    variant_name: "Medium",
+    quantity: 2,
+  },
+  {
+    username: "user2",
+    productName: "Jeans",
+    variant_name: "Size M",
+    quantity: 1,
+  },
+  { username: "user3", productName: "Jeans", variant_name: "34", quantity: 3 },
 ];

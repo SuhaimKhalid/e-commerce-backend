@@ -1,3 +1,20 @@
 module.exports = [
-  { order_id: 2, amount: 899.99, method: "credit_card", status: "completed" },
+  {
+    orderId: 1,
+    amount: 100.0,
+    method: "card",
+    status: "completed",
+  },
+  {
+    orderId: 2,
+    amount: 55.99,
+    method: "paypal",
+    status: "processing",
+  },
+  {
+    orderId: 3,
+    amount: 35.0,
+    method: "cash",
+    status: "completed",
+  },
 ];

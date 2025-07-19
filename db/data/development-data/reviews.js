@@ -1,4 +1,20 @@
 module.exports = [
-  { user_id: 1, product_id: 1, rating: 5, comment: "Great T-Shirt!" },
-  { user_id: 2, product_id: 2, rating: 4, comment: "Good laptop, fast delivery." },
+  {
+    username: "user1",
+    productName: "Classic T-Shirt",
+    rating: 5,
+    comment: "Great quality and fits perfectly!",
+  },
+  {
+    username: "user2",
+    productName: "Hoodie",
+    rating: 4,
+    comment: "Warm and cozy, but runs a bit small.",
+  },
+  {
+    username: "user3",
+    productName: "Running Shoes",
+    rating: 3,
+    comment: "Good for jogging but not for long runs.",
+  },
 ];
