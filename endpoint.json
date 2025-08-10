@@ -1,0 +1,5 @@
+{
+  "GET /api/users": {
+    "description": "Show all users data"
+  }
+}
